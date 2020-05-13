@@ -281,8 +281,8 @@ function onLoad()
 		// Try to get as squared as possible
 		//
 		var numTiles = tiles.length;
-		var numRows = Math.sqrt( numTiles ) | 0;
-		var numCols = Math.ceil( numTiles / numRows ) | 0;
+		var numRows = numTiles;
+		var numCols = 1;
 
 		extractedTilesWidth = numCols * tileWidth;
 		extractedTilesHeight = numRows * tileHeight;
